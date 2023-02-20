@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+        <iframe name="result" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin" frameborder="0"></iframe>
+
+    <div class="password-title">
+        <h1>PASSWORD GENERATOR</h1>
+    </div>
+
+    <form id="PasswordGeneratorContainer">
+    <div class="result-container" id="result-container">
+
+        <span id="result">P4$5W0rD!</span>
+        <button type="click" class="btn" id="clipboard">
+            <svg class="clip" width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
+                <g transform="matrix(0.4 0 0 0.4 12 12)" >
+                <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; 
+                stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(38, 209, 135); fill-rule: nonzero; opacity: 1;" 
+                Transform=" translate(-25, -25)" 
+                d="M 19 0 L 19 6 L 21 8 L 21 2 L 36 2 L 36 14 L 48 14 L 48 40 L 33 40 L 33 42 L 50 42 L 50 12.59375 L 37.40625 0 Z M 38 3.40625 L 46.59375 12 L 38 12 Z M 0 8 L 0 50 L 31 50 L 31 20.59375 L 30.71875 20.28125 L 18.71875 8.28125 L 18.40625 8 Z M 2 10 L 17 10 L 17 22 L 29 22 L 29 48 L 2 48 Z M 19 11.4375 L 27.5625 20 L 19 20 Z" stroke-linecap="round" />
+                </g>
+                </svg>
+                <span></span>
+        </button>
+    </div>
+
+    
+    <div class="container">
+    
+    
+    <div class="settings">
+            <div class="setting">
+                <label for="char-len">Character Length</label>
+                <input type="number" id="char-len" max="30" min="4">
+            </div>
+            <input type="range" id="bar-lenght" min="4" max="30"
+            value="15" style="width: 100%" class="slider" />
+
+        <div class="setting">
+            <label for="upperCase">Include Uppercase Letters</label>
+            <input type="checkbox" id="upperCase" checked />
+        </div>
+
+        <div class="setting">
+            <label for="lowerCase">Include Lowercase Letters</label>
+            <input type="checkbox" id="lowerCase" checked />
+        </div>
+
+        <div class="setting">
+            <label for="numbers">Include Numbers</label>
+            <input type="checkbox" id="numbers" checked />
+        </div>
+
+    <div class="setting">
+        <label for="symbols">Include Symbols</label>
+        <input type="checkbox" id="symbols" checked />
+    </div>
+
+
+
+        <div class="strength-box" id ="strength-box">
+            <span class="strength-label">Strength</span>
+            <div class="strength-value" id="strength-value">
+                <span id ="bad"></span>
+                <span id ="weak"></span>
+                <span id ="medium"></span>
+                <span id ="strong"></span>
+            </div>
+            </div>
+        </div>
+
+        <button type="click" class=" btn btn-large" id="generate">GENERATE  
+            <svg class="icon-svg"
+                width="12" 
+                height="12" 
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path 
+                    fill="white" 
+                    d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/>
+            </svg>
+        </button>
+    </div>
+
+    </div>
+
+    </form>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
