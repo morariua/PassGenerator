@@ -61,23 +61,20 @@ generateEl.addEventListener('click', (e) => {
     
 });
 
-
+clipboardEl.addEventListener('click', (e) => {
+  e.preventDefault();
+  copyToClipboard(resultEl);
+});
 
 
 //copy to clipboard when submitted
-clipboardEl.addEventListener('click', (e) => {
-  e.preventDefault()
+function copyToClipboard() {
+  navigator.clipboard.writeText(resultEl.innerText)
+      .then(function() {
+        console.log('Copied to clipboard');
 
-
-  password = resultEl.innerText;
-
-  navigator.clipboard.writeText(password);
-
-    console.log(password);
-
-
-
-});
+  });
+}
 
 //generate Password function using the charactercodes
 
